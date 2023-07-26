@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>cartQuantity</title>
+</head>
+<body>
+    <button  onclick=" console.log (`cartQuantity: ${cartQuantity}`);">show Quantity </button>
+    
+    <button onclick="cartQuantity++; console.log(`cartQuantity: ${cartQuantity}`);">Add to Cart </button>
+   
+    <button onclick="cartQuantity+=2; console.log(`cartQuantity: ${cartQuantity}`);">+2 </button>
+
+    <button onclick="cartQuantity+=3; console.log(`cartQuantity: ${cartQuantity}`);">+3 </button>
+
+    <button onclick="cartQuantity+=6; console.log(`cartQuantity: ${cartQuantity}`);">+6 </button>
+
+    <button onclick="cartQuantity+=8; console.log(`cartQuantity: ${cartQuantity}`);">+8 </button>
+
+    <button onclick="cartQuantity=cartQuantity+10; console.log(`cartQuantity: ${cartQuantity}`);">+10 </button>
+    <!-- اس عبارت کا اصل مطلب یہ اور جمع کے نشان کو ہم نے شارٹ فام کے لئے لکھا ہے -->
+
+    <button onclick="cartQuantity-=4; console.log(`cartQuantity:${cartQuantity}`);">-4</button>
+
+    <button onclick=" cartQuantity = 0;
+    console.log('cart was reset' );
+    console.log(`cart Quantity :${cartQuantity}`);"> Reset Cart
+
+    </button>
+    <button onclick=" for (let number = 1; number < 11; number ++)
+    {
+
+      console.log(`2 * ${number} = ${number*2}`)
+    }"> 2 Tabel</button>
+    </button>
+    <button onclick=" for (let number = 1; number < 11; number ++)
+    {
+
+      console.log(`3 * ${number} = ${number*3}`)
+    }"> 3 Tabel</button>
+    </button>
+    <button onclick=" for (let number = 1; number < 11; number ++)
+    {
+
+      console.log(`4 * ${number} = ${number*4}`)
+    }"> 4 Tabel</button>
+    </button>
+    <button onclick=" for (let number = 1; number < 11; number ++)
+    {
+
+      console.log(`5 * ${number} = ${number*5}`)
+    }"> 5 Tabel</button>
+    </button>
+    <button onclick=" for (let number = 1; number < 11; number ++)
+    {
+
+      console.log(`6 * ${number} = ${number*6}`)
+    }"> 6 Tabel</button>
+
+<p>
+    <button onclick="calculation+='1'; console.log(calculation);" >1</button>
+
+
+    <button onclick="calculation+='2'; console.log(calculation);" >2</button>
+
+    <button onclick="calculation+='3'; console.log(calculation);" >3</button>
+
+    <button onclick="calculation+='+'; console.log(calculation);" >+</button>
+</p>
+<p>
+    <button onclick="calculation+='4'; console.log(calculation);" >4</button>
+
+    <button onclick="calculation+='5'; console.log(calculation);" >5</button>
+
+    <button onclick="calculation+='6'; console.log(calculation);" >6</button>
+
+    <button onclick="calculation+='-'; console.log(calculation);" >-</button>
+</p>
+<p>
+    <button onclick="calculation+='7'; console.log(calculation);" >7</button>
+
+    <button onclick="calculation+='8'; console.log(calculation);" >8</button>
+
+    <button onclick="calculation+='9'; console.log(calculation);" >9</button>
+
+    <button onclick="calculation+='*'; console.log(calculation);" >*</button>
+</p>
+<p>
+    <button onclick="calculation+='0'; console.log(calculation);" >0</button>
+
+    <button onclick="calculation+='.'; console.log(calculation);" >.</button>
+
+    <button onclick="calculation= eval(calculation); console.log(calculation)" >=</button>
+    
+        <button onclick="calculation+='/'; console.log(calculation);" >/</button>
+    </p>
+           <p> <button onclick="calculation=''; console.log(calculation);" >clear</button></p>
+        
+    
+
+    <script>
+        let cartQuantity = 0;
+        let result;
+
+        const randomNumber = Math.random ()
+        if ( randomNumber< 0.5) {
+             result = 'heads';
+        }else {
+            result = "tails";
+        }
+        
+        let guess = 'heads';
+        if (guess=== result) {
+            console.log("you win")
+        } else {
+            console.log("you lose")
+        }
+
+          //  یہاں سے لوپ کا سبق شروع ہوا
+
+        //  for (let number = 1; number < 11; number ++)
+    
+
+    //  {console.log(`2 * ${number} = ${number*2}`)}
+    
+
+         
+
+        var num = 1;
+
+        let calculation = '';
+
+
+    </script>
+</body>
+</html>
